@@ -22,7 +22,7 @@
 
     <div style=" margin-top: 40px; margin-left: 15px;">
       <h4 style="float: left;"><label for="username">닉네임</label></h4>
-      <input id="userid" type="text" style="float: left; margin-left: 30px;" placeholder="기존 닉네임">
+      <input id="userid" type="text" style="float: left; margin-left: 30px;" placeholder="기존 닉네임" onfocus="this.placeholder = ''" onblur="this.placeholder = '기존 닉네임'" />
     </div>
 
     <div id="content" style=" margin-top: 100px; margin-left: 15px;">
@@ -33,13 +33,13 @@
     <br>
     <div id="content" style=" margin-top: 40px; margin-left: 15px;">
       <h4 style="float: left;"><label for="emalul">이메일</label></h4>
-      <input id="email" type="email" style="float: left; margin-left: 30px;" placeholder="기존 이메일">
+      <input id="email" type="email" style="float: left; margin-left: 30px;" placeholder="기존 이메일" onfocus="this.placeholder = ''" onblur="this.placeholder = '기존 이메일'" />
     </div>
 
     <br>
     <div id="content" style="margin-top: 40px; margin-left: 15px;">
       <h4 style="float: left;"> 자기소개 </h4>
-      <textarea cols="40" rows="5" placeholder="자신을 소개해주세요!" style="margin-left: 12px;"></textarea>
+      <textarea cols="40" rows="5" placeholder="자신을 소개해주세요!" style="margin-left: 12px;" onfocus="this.placeholder = ''" onblur="this.placeholder = '자신을 소개해주세요!'" /></textarea>
     </div>
 
     <br>
