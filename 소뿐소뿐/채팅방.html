@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/60a508a0a6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+.chatwrap{
+    margin: 0 auto;
+    width: 80%;             /* 폭 80으로 설정 후 margin auto  설정*/
+}
+i{
+    font-size: 70px;
+    float: left;
+    margin-right: 10px;
+} 
+.chatName h1{
+    margin: 0px;
+}
+
+.wrap {
+    padding: 40px 0;
+    
+}
+.wrap .chat_ch1,.chat_ch2 {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+/* display가 inline-block이면은 textbox 크기 자동 설정됩니다 까먹지 말아요~~*/
+.wrap .chat_ch1 .textbox, .wrap .chat_ch2 .textbox{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 7px;
+    font-size: 17px;
+    border-radius: 10px;  
+}
+/* 가상 클래스 이용해서 말 풍선 꼬리 생성 기초작업 */
+.wrap .chat_ch1 .textbox::before ,.wrap .chat_ch2 .textbox::before{
+    position:absolute;
+    display: block;
+    top: 0;
+    font-size: 1.5rem;;
+}
+/* 왼쪽 말풍선 설정*/
+.wrap .chat_ch1 .textbox{
+    margin-left: 20px;
+    background-color: #ddd;
+} 
+/*왼쪽 말풍선 꼬리 생성*/
+.wrap .chat_ch1 .textbox::before{
+    left: -18px;
+    content:"◀";
+    color: #ddd;
+}
+
+/*오른쪽 말풍선 방향 전환*/
+.wrap .chat_ch2{
+    flex-direction: row-reverse;
+}
+/* 네온 연두색으로 깔맞춤*/
+.wrap .chat_ch2 .textbox {
+    margin-right: 20px;
+    background-color: #40F608;
+    color: white;
+}
+
+.wrap .chat_ch2 .textbox::before{
+    right: -15px;
+    content: "▶";
+    color: #40F608;
+    
+}
+.chat_send_input{
+    border-radius: 5px;
+    border: none;
+    width: 96%;
+    display: inline-block;
+    margin:5px 10px;
+}
+.chat_send2{
+    display: inline-block;
+    width: 90%;
+    margin: 0px;
+}
+</style>
+<body>
+    <div class="chatwrap">
+        <div class="chatProfile" style="height: 90px;">
+            <div class="profile_icon" sy><i class="fa-regular fa-circle-user"></i></div>
+                <div class="chatName" style="float: left;">
+                    <h1 style="margin-top: 0px;">닉네임</h1>
+                    <p style="font-size: 15px; margin-top: 10px;"> 위치 정보 </p></div>
+                
+                <div class="trust" style="float:right;">
+                    <h3 style="font-size: 15px; margin-top:20px; margin-bottom:3px;"> 신뢰도 20% </h3>
+                    <progress max="100" value="20" style="width: 80px; height: 20px;"></progress>
+                </div>
+                      
+        </div>
+        <hr style="border: solid 1px gray; margin-top:0px">
+        
+        <!--chat----------------------------------------------------------------------------->
+        <div class="wrap">
+            <div class="chat_ch1">
+                <div class="textbox">안녕하세요. 소분 참여 가능할까요?</div>
+            </div>
+            <div class="chat_ch2">
+                <div class="textbox">안녕하세요. 네~</div>
+            </div>
+            <div class="chat_ch1">
+                <div class="textbox">오늘 거래 가능하신가요?</div>
+            </div>
+            <div class="chat_ch2">
+                <div class="textbox">내일 어떠신가요?</div>
+            </div>
+            <div class="chat_ch1">
+                <div class="textbox">내일 11시 어떠신가요?</div>
+            </div>
+            <div class="chat_ch2">
+                <div class="textbox">내일 11시 좋습니다!!</div>
+            </div>
+        </div>
+        
+        <div class="chat_write" style="height:30px; background-color:lightgray">
+            <div class="chat_send">
+                <i class="fa-solid fa-plus" style="font-size: 20px; margin:5px 10px; float:left;"></i>
+            </div>
+            <div class="chat_send2" style="display: inline-block;">
+                <input type="text" placeholder="텍스트를 입력하세요." class="chat_send_input" style="float: left;">
+            </div>
+            <div class="chat_send3" style="display:inline-block;">
+                <i class="fa-regular fa-paper-plane" style="font-size: 15px; float:left; margin-bottom:5px"></i>
+            </div>
+        </div>
+
+    </div>
+        
+</body>
