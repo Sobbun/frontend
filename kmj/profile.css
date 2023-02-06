@@ -1,20 +1,27 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 #container {
-  margin: 0 auto;
   text-align: left;
   width: 80%;
 }
 #content {
   clear: both;
-  margin: 0 auto;
   width: 80%;
 }
 
 input {
   width: 300px;
   height: 30px;
+}
+
+input:focus {
+  outline-color: #58CCFF;
+  
+}
+
+textarea:focus {
+  outline-color: #58CCFF;
 }
