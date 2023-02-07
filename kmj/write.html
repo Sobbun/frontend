@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글쓰기</title>
+  <link rel="stylesheet" href="write.css">
+</head>
+<body>
+    <div id="container">
+      <h1 style="margin-top: 20px;">글쓰기</h1>
+      <hr>
+      <form method="POST" action="/posts">
+        <div style="float: left">
+            <input type=file name='file1' style='display: none;'> 
+            <img src='upload.png' border='0' onclick='document.all.file1.click(); document.all.file2.value=document.all.file1.value'> 
+        </div>
+        <div>
+            <input type="text" name="title" placeholder="제목" onfocus="this.placeholder = ''" onblur="this.placeholder = '제목'" />
+        </div>
+
+        <div>
+            <input type="text" name="title" placeholder="상품명" onfocus="this.placeholder = ''" onblur="this.placeholder = '상품명'" />
+        </div>
+
+        <div>
+            <input type="datetime-local" style="width: 25%;">
+            <input type="number" style="width: 25%;" placeholder="가격(원)" onfocus="this.placeholder = ''" onblur="this.placeholder = '가격(원)'" />
+        </div>
+        <div>
+            <select>
+                <option>음식</option>
+                <option>생활용품</option>
+                <option>뷰티/미용</option>
+                <option>건강/운동</option>
+            </select>
+        </div>
+ 
+        <div>
+            <textarea name="description" placeholder="내용" onfocus="this.placeholder = ''" onblur="this.placeholder = '내용'" /></textarea>    
+        </div>
+      </form> 
+        <div>
+            <button type="submit">글 작성</button>
+        </div>
+
+
+    </div>
+</body>
+</html>
