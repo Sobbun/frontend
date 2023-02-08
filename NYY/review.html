@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>거래 후기 보내기</title>
+<link rel="stylesheet" href="review.css">
+</head>
+
+<body>
+
+<header>
+<img src="images/54782.png" style="width:60px; height:43.2px; float: left;">
+<h1 style="margin-right: 60px;">거래 후기 보내기</h1>
+</header>
+<main>
+<h2> A님,
+<br>
+ B님과의 거래가 어떠셨나요?
+</h2>
+<h4>선택해 주세요</h4>
+<img src="images/positive-vote.png" style="width:200px; height:200px; float: left; margin-top: 20px; margin-left:20%; margin-right:25%">
+
+
+<img src="images/negative-vote.png" style="width:200px; height:200px; float: left; margin-top: 20px; margin-right:20%">
+</main>
+
+<div class="rating">
+<input id="check-btn" type="checkbox" />
+<label for="check-btn"><h2 style="float:left; margin-left:30%;">GOOD</h2></label>
+
+<input id="check-btn" type="checkbox" />
+<label for="check-btn"><h2 style="float: left; margin-left:30%; margin-right:30%">BAD</h2></label>
+<ul class="menubars" style="float:left; margin-left:22%;">
+          <input type="checkbox" >상품설명이 설명한 것과 같아요.<br>
+          <input type="checkbox" >상품설명이 자세해요.<br>
+          <input type="checkbox" >친절하고 매너가 좋아요.<br>
+          <input type="checkbox" >시간 약속을 잘 지켜요.<br>
+          <input type="checkbox" >응답이 빨라요.<br>
+      </ul>
+      
+<ul class="menubars" style="float:left; margin-left:15%;">
+          <input type="checkbox" >시간 약속을 안 지켜요.<br>
+          <input type="checkbox" >채팅 메시지를 읽고도 답이 없어요.<br>
+          <input type="checkbox" >약속 장소에 나타나지 않았어요.<br>
+          <input type="checkbox" >불친절해요.<br>
+          <input type="checkbox" >상품 상태가 설명과 달라요.<br>
+      </ul>
+      <br>
+<textarea class="menubars" placeholder="거래 후기를 적어주세요."></textarea><br>
+</div>
+<footer>
+<button id="button">후기 보내기</button>
+</footer>
+
+</body>
+</html>
