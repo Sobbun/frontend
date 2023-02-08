@@ -62,7 +62,7 @@ nav ul li{
 .imag{
     width: 45px;
     float: left;
-    padding: 2px 30px; 
+    margin: 2px 30px; 
   }
   /* 로그인/회원가입 */
 .login{
@@ -503,16 +503,29 @@ div.write{
       .login2_logo { 
         display : block;
         margin : auto;
+        margin-top: 50px;
       }
       
-      .logwrap button{ cursor: pointer; }
+      .logWrap button{ 
+        cursor: pointer; 
+        height:30px;
+      }
       
       
-      .logwrap a{
+      .logWrap a{
         text-decoration: none;
         color: black;
       }
+      .logWrap{
+        margin-left: 620px;
+        margin-top: 80px;
+      }
 
+      #log_text{
+        width: 300px;
+        height: 30px;
+        margin-bottom: 20px;
+      }
       /*******************로그인3****************************/
       #container_login3 {
         text-align: left;
