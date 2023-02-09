@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글쓰기</title>
+  <link rel="stylesheet" href="write.css">
+</head>
+<body style="overflow-x: hidden">     
+    <link rel="stylesheet" href="./STYLE.CSS">     
+    <div class="write_wrapper">
+    <a href="./realMain.html">   
+        <img src="./sobun2.png" alt="My image" class="imag">    
+        </a>  
+          <nav>
+                <ul>   
+                  <li class="topnav">
+                    <div class="topnav_menu"><a href=게시판.html>게시판</a></div>
+                  </li>
+                  <li class="topnav">
+                    <div class="topnav_menu"><a href=채팅.html>채팅</a></div>
+                  </li>
+                  <li class="topnav">
+                    <div class="topnav_menu"><a href=이벤트.html>이벤트</a></div>
+                  </li>
+                  <li class="topnav">
+                    <div class="topnav_menu"><a href=마이페이지.html>마이페이지</a></div>
+                  </li>
+                  <li class="login">
+                    <div class="login_menu"><a href="./로그인1.html">로그인</a></div>
+                  </li>
+                  <li class="login">
+                    <div class="login_menu"><a href="./로그인2.html">회원가입</a></div>
+                  </li>
+                </ul>
+              </nav>
+
+    <div id="container_postWrite">
+      <h1 style="margin-top: 20px;">글쓰기</h1>
+      <hr>
+      <form method="POST" action="/posts">
+        <div style="float: left">
+            <input type=file name='file1' style='display: none;'> 
+            <img src='upload.png' border='0' onclick='document.all.file1.click(); document.all.file2.value=document.all.file1.value'> 
+        </div>
+        <div>
+            <input type="text" name="title" placeholder="제목" onfocus="this.placeholder = ''" onblur="this.placeholder = '제목'" />
+        </div>
+
+        <div>
+            <input type="text" name="title" placeholder="상품명" onfocus="this.placeholder = ''" onblur="this.placeholder = '상품명'" />
+        </div>
+
+        <div>
+            <input type="datetime-local" style="width: 18.5%;">
+            <input type="number" style="width: 15%;" placeholder="모집인원" onfocus="this.placeholder = ''" onblur="this.placeholder = '가격(원)'" />
+            <input type="number" style="width: 15%;" placeholder="1인당 가격(원)" onfocus="this.placeholder = ''" onblur="this.placeholder = '가격(원)'" />
+        </div>
+        <div>
+            <select>
+                <option>음식</option>
+                <option>생활용품</option>
+                <option>뷰티/미용</option>
+                <option>건강/운동</option>
+            </select>
+        </div>
+ 
+        <div>
+            <textarea name="description" placeholder="내용" onfocus="this.placeholder = ''" onblur="this.placeholder = '내용'" /></textarea>    
+        </div>
+      </form> 
+        <div>
+            <a href="./게시판.html"><button type="submit"><span style="color:white;">글 작성</span></button></a>
+        </div>
+
+
+    </div>
+    <footer>
+    
+      <div class="info">
+        <span>서울특별시 서초구 동작대로 132 안석빌딩 9층</span>
+        <span>소뿐소뿐 Company</span>
+        <span>admin@sobbun.com</span>
+      </div>
+  
+      <p class="copyright">
+        &copy; <span class="this-year"></span> Design by JOY Team
+      </p>
+        <img src="./sobun2.png" width="100" height="100" class="logo" />
+  
+  
+  </footer>
+</div>
+    
+  </div> 
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="overflow-x: hidden">     
+  <link rel="stylesheet" href="./STYLE.CSS">  
+    <a href="./realMain.html">   
+    <img src="./sobun2.png" alt="My image" class="imag">    
+    </a>     
+    <nav>
+        <ul>   
+          <li class="topnav">
+            <div class="topnav_menu"><a href=게시판.html>게시판</a></div>
+          </li>
+          <li class="topnav">
+            <div class="topnav_menu"><a href=채팅.html>채팅</a></div>
+          </li>
+          <li class="topnav">
+            <div class="topnav_menu"><a href=이벤트.html>이벤트</a></div>
+          </li>
+          <li class="topnav">
+            <div class="topnav_menu"><a href=마이페이지.html>마이페이지</a></div>
+          </li>
+          <li class="login">
+            <div class="login_menu"><a href="./로그인1.html">로그인</a></div>
+          </li>
+          <li class="login">
+            <div class="login_menu"><a href="./로그인2.html">회원가입</a></div>
+          </li>
+        </ul>
+      </nav>
+    <!---------------------------------------------------------------------------------------------->
+    <div id="container_login3">
+      <h3 style="text-align: left; margin-top: 20px; margin-bottom: 10px;"> 프로필 설정</h3>
+      <hr>
+  
+      <div id="photo_login3" style="margin-top: 20px;">
+        <h4 style="float: left; margin-left: 20px; margin-top: 40px;"> 사진 </h4>
+        <div id="profileimg_login3" style="background: lightgray; border-radius: 70%; width: 100px; 
+        height: 100px; overflow: hidden; margin-left: 100px;">
+          <img src="logo.png" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+  
+      <div style=" margin-top: 40px; margin-left: 15px;">
+        <h4 style="float: left;"><label for="username">닉네임</label></h4>
+        <input id="userid_login3" type="text" style="float: left; margin-left: 30px;" placeholder="기존 닉네임" onfocus="this.placeholder = ''" onblur="this.placeholder = '기존 닉네임'" />
+      </div>
+  
+      <div id="content_login3" style=" margin-top: 100px; margin-left: 15px;">
+        <h4 style="float: left;"><label for="date">생년월일</label></h4>
+        <input id="date_login3" type="date" style="float: left; margin-left: 15px;">
+      </div>
+  
+      <br>
+      <div id="content_login3" style=" margin-top: 40px; margin-left: 15px;">
+        <h4 style="float: left;"><label for="emalul">이메일</label></h4>
+        <input id="email_login3" type="email" style="float: left; margin-left: 30px;" placeholder="기존 이메일" onfocus="this.placeholder = ''" onblur="this.placeholder = '기존 이메일'" />
+      </div>
+  
+      <br>
+      <div id="content_login3" style="margin-top: 40px; margin-left: 15px;">
+        <h4 style="float: left;"> 자기소개 </h4>
+        <textarea cols="40" rows="5" placeholder="자신을 소개해주세요!" style="margin-left: 12px;" onfocus="this.placeholder = ''" onblur="this.placeholder = '자신을 소개해주세요!'" /></textarea>
+      </div>
+  
+      <br>
+      <div id="content_login3" style="margin-left: 160px;">
+        <button style="background-color: #58CCFF; border: none; margin-left: 10px;
+                       color: black; width: 100px; height: 40px; border-radius: 5px;
+                       font-size: 15px; font-weight: bold; margin-top: -10px;"><a href="./마이페이지.html"><span style="color:white;"> 저장</span></a> </button>
+        <button style="background-color:lightgray; border: none; margin-left: 20px;
+        color: black; width: 100px; height: 40px; border-radius: 5px;
+        font-size: 15px; font-weight: bold; margin-top: -10px;"><a href="./마이페이지.html"> 취소</a> </button>
+    </div>
+  
+  
+  
+    </div>
+</body>
+</html>
