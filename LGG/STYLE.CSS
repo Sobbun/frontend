@@ -81,7 +81,6 @@ nav ul li{
 div.search{
     height:40px;
     width: 400px;
-    border: 1px solid black;
     margin-top:15px;
     margin-left: 5px;    /*왜 안먹지??*/
     padding: 0;
@@ -526,7 +525,7 @@ div.write{
       
       .loginbox{
           width: 780px; height: 550px;
-          margin: 0 auto;
+          margin: 50px auto;
       }
       .loginbox h2{
           width: 100%;
@@ -670,14 +669,12 @@ div.write{
         margin : auto;
       }
       
-      *{ padding: 0; margin: 0; } 
-      
       button{ cursor: pointer; }
       
       
       .loginbox_5{
           width: 780px; height: 550px;
-          margin: 0 auto;
+          margin: 200px auto;
       }
       .loginbox_5 form{
           width: 100%; height: 450px;
